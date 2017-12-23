@@ -24,7 +24,5 @@
 
 >* [CH04 - 教学指导](ch04/guidelines.md)
 >* [CH04 - 课堂笔记](ch04/lecture_notes_04-01.md)
->* [CH04 - 实验指导 4.1](ch04/experiment_04-01.md)
->* [CH04 - 实验指导 4.2](ch04/experiment_04-02.md)
->* [CH04 - 实验指导 4.3](ch04/experiment_04-03.md)
+>* [CH04 - 实验指导](ch04/experiment_04-01.md)
 >* [CH04 - 家庭作业](ch04/assignments.md)
