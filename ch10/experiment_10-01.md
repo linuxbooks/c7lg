@@ -18,11 +18,11 @@
   * 配置所有仓库的国内镜像URL
   * 更新系统
 2. 安装常用的必要的软件
-  * bash-completion、vim-enhanced
-  * net-tools psmisc
+  * bash-completion vim-enhanced
+  * net-tools psmisc yum-cron yum-utils
   * wget curl elinks lftp mailx mutt rsync ntp
-  * htop dstat lsof sysstat
-  * nload iftop nethogs
+  * sysstat htop dstat nload nethogs iftop
+  * rkhunter aide denyhost fail2ban lynis
 3. 系统基本配置
   * 设置语言、时区
   * 设置主机名
