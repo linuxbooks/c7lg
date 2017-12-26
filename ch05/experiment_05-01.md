@@ -76,21 +76,26 @@
 * 显示当前可用的仓库
 * 为每个仓库在本地创建仓库元数据缓存
 
+>**提示** 使用 `yum-utils` 包中提供的 `yum-config-manager` 命令可以管理 yum 的配置选项和仓库配置文件（如：启用/禁用指定的仓库、从一个URL配置仓库配置文件等）
+
 ## 任务4：安装 LXC 
 
 >* LXC 相关的 RPM 包在 EPEL 仓库中，请先配置 EPEL 仓库
 
 ```
-yum install debootstrap perl libvirt
-ip  # 显示 libvirt 创建的网桥设备
+yum -y install debootstrap perl libvirt
+systemctl is-enabled libvirtd
+systemctl is-active libvirtd
+systemctl start libvirtd
+ip a # 显示 libvirt 创建的网桥设备
 
 
 yum search lxc
 yum -y install lxc lxc-templates
-systemctl start lxc.service libvirtd
+systemctl start lxc.service
 lxc-checkconfig
 
-yum -y lxc-extra
+yum -y install lxc-extra
 echo "alias lxc-ls='lxc-ls --fancy'" >> ~/.bashrc
 . ~/.bashrc
 lxc-ls
@@ -98,20 +103,44 @@ lxc-ls
 
 ## 任务5：创建和使用 LXC 容器
 
+1、 通过不同发行模版创建容器
+
 ```
 ll /usr/share/lxc/templates/
+
 lxc-create -n c7-v1 -t centos
 lxc-ls
 
-lxc-start -d -n c7-h1 
-lxc-attach -n c7-h1 -- passwd
-lxc-attach -n c7-h1 -- yum install openssh-server
-lxc-attach -n c7-h1 -- ip a
+## 在容器启动前，以 chroot 方式修改口令 
+chroot /var/lib/lxc/c7-v1/rootfs passwd
 
+## 启动指定的容器，-d 表示后台
+lxc-start -d -n c7-v1 
+lxc-ls
+## 在制定容器中直接执行命令
+lxc-attach -n c7-v1 -- ip a
+
+ssh [<User>@]<IP>
+
+lxc-stop -n c7-v1 
+```
+
+2、 下载模版并创建容器
+
+```
+## 显示可用的镜像模版
 /usr/share/lxc/templates/lxc-download -l
-lxc-create -n c6-v1 -t download -- -d centos -r 6 -a amd64
-lxc-create -n d9-v1 -t download -- -d debian 
 
+lxc-create -n c6-v1 -t download -- -d centos -r 6 -a amd64
+lxc-start -d -n c6-v1 
+
+## 在容器启动后，以 lxc-attach 方式修改口令 
+lxc-attach -n c6-v1 -- passwd
+lxc-attach -n c6-v1 -- yum install openssh-server
+lxc-attach -n c6-v1 -- ip a
+
+lxc-create -n d9-v1 -t download -- -d debian -r stretch -a amd64
+lxc-create -n d8-v1 -t download -- -d debian -r jessie -a amd64
 ```
 
 >**参考**
@@ -157,6 +186,9 @@ lxc-create -n d9-v1 -t download -- -d debian
 ## 任务9：配置网络连接（续）
 
 * 为 centos 6 容器 配置网络连接 
+  * 配置工具 `system-config-network` 
+  * 主机名设置在 `/etc/sysconfig/network` 文件中
+  * DNS 解析配置文件 `/etc/resolv.conf`
 * 为 debian 9 容器 配置网络连接
 
 >* **要求** 均配置为 静态 IP 地址 （网段与 libvirt 创建的虚拟网桥一致）

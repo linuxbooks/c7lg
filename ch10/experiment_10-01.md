@@ -19,8 +19,8 @@
   * 更新系统
 2. 安装常用的必要的软件
   * bash-completion vim-enhanced
-  * net-tools psmisc yum-cron yum-utils
-  * wget curl elinks lftp mailx mutt rsync ntp
+  * net-tools psmisc yum-cron yum-utils yum-security
+  * wget curl elinks lftp mailx mutt rsync ntp git
   * sysstat htop dstat nload nethogs iftop
   * rkhunter aide denyhost fail2ban lynis
 3. 系统基本配置
@@ -32,11 +32,11 @@
   * 限制每个用户能打开的最大文件数
   * 限制仅 wheel 组的人才能使用 sudo 和 su 命令
   * 关闭 SELINUX
-  * 预先写入 root 远程 ssh 登录的公钥
   * 确保网络参数配置正确后关闭 NetworkManager 服务
 4. 安全配置
   * SSH
     * 允许使用口令登录但 root 用户只能使用密钥登录
+    * 预先写入 root 远程 ssh 登录的公钥并为 .ssh 目录及其文件设置安全权限
     * 关闭 DNS 反向解析检查
     * ssh 回话闲置 5 分钟后自动注销登录
     * 安装配置 fail2ban
@@ -44,7 +44,10 @@
     * 口令必须大于12个字符
     * 必须至少包含四类字符中的一个
   * 网络 
-    * 开启防火墙
+    * 开启防火墙 22，80，443 端口
+
+>* 扩展：使 `postinstall.sh` 脚本同时适用于 CentOS 6/7 
+>* Vagrant 自动部署 -- https://www.vagrantup.com/docs/provisioning/shell.html
 
 ## 任务2：根据 shell 类型统计用户数
 
@@ -168,13 +171,13 @@ $ echo $?
 >**提示** 
 >判断 shell 变量的值 $n 是否为纯数字的方法
 >```
->[ -n "$n"  -a  -z "$(sed 's/[0-9]//g' <<<$n)" ]
->[ -n "$n"  -a  -z "$(egrep -o '[^0-9]+' <<<$n)" ]
+>[ -n "$n"  -a  -z "$(sed 's/[0-9]//g' <<< "$n")" ]
+>[ -n "$n"  -a  -z "$(egrep -o '[^0-9]+' <<< "$n")" ]
 >[ -n "$n"  -a  -z "${n//[0-9]/}" ]
 >[ -n "$n"  -a  "$n" == "${n//[0-9]/}" ]
 >
->[[ -n "$n"  &&  -z "$(sed 's/[0-9]//g' <<<$n)" ]]
->[[ -n "$n"  &&  -z "$(egrep -o '[^0-9]+' <<<$n)" ]]
+>[[ -n "$n"  &&  -z "$(sed 's/[0-9]//g' <<< "$n")" ]]
+>[[ -n "$n"  &&  -z "$(egrep -o '[^0-9]+' <<< "$n")" ]]
 >[[ -n "$n"  &&  -z "${n//[0-9]/}" ]]
 >[[ -n "$n"  &&  "$n" == "${n//[0-9]/}" ]]
 >```

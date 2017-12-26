@@ -28,11 +28,11 @@
  6   | 服务管理与基础服务 | [G6](ch06/guidelines.md)  | [E6](ch06/experiment_06-01.md)  | [A6](ch06/assignments.md)  |
  7   | 系统日常维护       | [G7](ch07/guidelines.md)  | [E7](ch07/experiment_07-01.md)  | [A7](ch07/assignments.md)  |
  8   | 服务器安全基础     | [G8](ch08/guidelines.md)  | [E8](ch08/experiment_08-01.md)  | [A8](ch08/assignments.md)  |
- 9   | Linux 防火墙       | [G9](ch09/guidelines.md)  | [E9](ch09/experiment_09-01.md)  | [A9](ch09/assignments.md)  |
+ 9   | Linux 防火墙       | [G9](ch09/guidelines.md)  | [E9.1](ch09/experiment_09-01.md), [E9.2](ch09/experiment_09-02.md)  | [A9](ch09/assignments.md)  |
  10  | Shell 脚本编程     | [G10](ch10/guidelines.md) | [E10](ch10/experiment_10-01.md) | [A10](ch10/assignments.md) | [Q2](quiz2.md)
  11  | DHCP 和 DNS 服务   | [G11](ch11/guidelines.md) | [E11](ch11/experiment_11-01.md) | [A11](ch11/assignments.md) |
  12  | FTP 和 NFS 服务    | [G12](ch12/guidelines.md) | [E12](ch12/experiment_12-01.md) | [A12](ch12/assignments.md) |
  13  | Samba 服务         | [G13](ch13/guidelines.md) | [E13](ch13/experiment_13-01.md) | [A13](ch13/assignments.md) |
  14  | Apache 基础        | [G14](ch14/guidelines.md) | [E14](ch14/experiment_14-01.md) | [A14](ch14/assignments.md) |
- 15  | Apache 进阶        | [G15](ch15/guidelines.md) | [E15.1](ch15/experiment_15-01.md),[E15.2](ch15/experiment_15-02.md) | [A15](ch15/assignments.md) |
+ 15  | Apache 进阶        | [G15](ch15/guidelines.md) | [E15.1](ch15/experiment_15-01.md), [E15.2](ch15/experiment_15-02.md) | [A15](ch15/assignments.md) |
  16  | E-mail 服务        | [G16](ch16/guidelines.md) | [E16](ch16/experiment_16-01.md) | [A16](ch16/assignments.md) | [Q3](quiz3.md)

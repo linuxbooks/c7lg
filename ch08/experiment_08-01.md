@@ -35,15 +35,10 @@
 
 ## 任务1：物理安全
 
-* 请为设置 GRUB 的修改口令
+* 设置 GRUB 的修改口令
 * 禁用 `<Ctrl>`+`<Alt>`+`<Delete>` 重启
 
-## 任务2：ntp 同步 （仅设置客户）
-
-* 关闭 `ntpd` 和 `chronyd` 服务
-* 使用 ntpdate 命令安排每日周期任务进行时间同步
-
-## 任务3：登录安全
+## 任务2：登录安全
 
 * 设置 bash 超时自动注销
 * 限制 root 用户 bash 命令历史的记录条目数量为 10
@@ -51,20 +46,24 @@
 * 禁止 root 用户登录 SSH 服务（口令锁定）
 * 配置 root 仅能使用用户密钥而非用户口令登录 SSH 服务
 
-## 任务4：软件安全
+## 任务3：软件安全
 
 * 安装 `yum-cron` 
 * 配置 `yum-cron`
   * 获取每日安全更新通知
   * 发送到你自己的邮箱
 
-## 任务5： 服务安全
+## 任务4： 服务安全
 
-* 确认关闭无必要 FTP 服务 
-* 确认关闭无必要 NFS 服务 
-* 关闭 NetworkManager 服务
+* 关闭无必要 `vfstpd` 服务 
+* 关闭无必要 `nfs` 服务 
+* 关闭 `NetworkManager` 服务
+* 关闭无必要 `ntpd` 和 `chronyd` 服务
+  * 使用 `ntpdate` 命令安排每日周期任务进行时间同步
 
-## 任务6：口令安全
+>**将不同的 服务/应用 分散部署在不同的 服务器/虚拟机/容器**
+
+## 任务5：口令安全
 
 * 记住最近使用的5个口令，在设置新口令时不能使用
 * 口令质量检查 （/etc/security/pwquality.conf）
@@ -77,21 +76,22 @@
   * 5 次登录失败进行登录锁定
   * 20 分钟后自动解锁  
 
-## 任务7：访问控制
+## 任务6：访问控制
 
 * 为 apache 用户设置打开文件数的限制为 65535
 * 配置仅 wheel 组成员可以使用 su 和 sudo 命令
 * 安装 `denyhost` 工具基于 `TCP Wrappers` 实现对 SSH 服务的主机访问控住保护
 
-## 任务8：文件加密与解密
+## 任务7：文件加密与解密
 
+* 显示 openssl 支持的所有兑成加密算法
 * 使用 aes128 加密算法对 /root/anaconda-ks.cfg 文件加密
   * 加密后的文件为  /root/anaconda-ks.cfg.mi
 * 对 /root/anaconda-ks.cfg.mi 文件进行解密 
   * 加密后的文件为  /root/anaconda-ks.cfg.new
 * 使用 `diff` 命令比对解密文件与源文件
 
-## 任务9：校验 RPM 包的数字签名
+## 任务8：校验 RPM 包的数字签名
 
 * 使用 wget 下载最新的  usermin
   * http://www.webmin.com/download/rpm/usermin-current.rpm
@@ -106,7 +106,7 @@
   * 重新检查 usermin-current.rpm 文件的 GPG 签名
 
 
-## 任务10：校验文件的数字签名
+## 任务9：校验文件的数字签名
 
 * 校验 sha256sum.txt.asc 文件的 GPG 签名从而确认此文件确实是 CentOS 发布的
       wget http://mirrors.163.com/centos/7/isos/x86_64/sha256sum.txt.asc
@@ -125,7 +125,7 @@
 
 > **提示** 若 ISO 文件下载在 Windows 上，可以使用 git-for-windows 中集成的 gpg 工具完成
 
-## 任务11：自签名 SSL/TLS 证书
+## 任务10：自签名 SSL/TLS 证书
 
 * 创建单域名自签名证书文件及其私钥
   * 证书文件 ftp.olabs.lan.crt
@@ -138,26 +138,31 @@
     * olabs.net www.olabs.net wiki.olabs.net 
     * olabs.org www.olabs.org wiki.olabs.org 
 
-## 任务12：RKHunter ： Check Rootkit
+## 任务11*：RKHunter ： Check Rootkit
 
 * 安装 RKHunter
+* 配置文件：`/etc/rkhunter.conf`
 * 检查系统上的 Rootkit
 
 >**参考** [RKHunter : Detect Rootkit](https://www.server-world.info/en/note?os=CentOS_7&p=rkhunter)
 
-## 任务13： AIDE ： Host based IDS
+## 任务12*： AIDE ： Host based IDS
 
 * 安装 AIDE
-* 配置 AIDE
+* 配置文件：`/etc/aide.conf`
 * 生成检测数据库
 * 检查系统上的重要文件变化，实现基于主机的入侵检测
 * 确认更改安全后重新生成检测数据库
 
 >**参考** [AIDE: Host based IDS](https://www.server-world.info/en/note?os=CentOS_7&p=aide)
 
-## 任务14： 漏洞检测
+## 任务13： 漏洞检测
 
 * 安装 `lynis` 
-* 使用 `lynis -c` 查看检测报告
+* 首次执行 `lynis audit system`
+* 使用 `lynis -c` 扫描整个系统
 * 根据 `lynis` 报告提示加固系统
 
+>**参考**
+>* https://cisofy.com/documentation/lynis/get-started/
+>* `man lynis`

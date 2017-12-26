@@ -133,6 +133,11 @@
     * 若您已配置了基于 Putty 的密钥登录，请在 Putty 的回话配置界面中设置，也可以使用 plink 命令行工具进行
 * 在 Windows 上的浏览器中使用 URL https://localhost:9000 访问 Webmin
 
+>**参考**
+>* [三种不同类型的 SSH 隧道](http://hetaoo.iteye.com/blog/2299123) 
+>* [通过 SSH 隧道连接远程 MySQL 服务](http://blog.csdn.net/fgf00/article/details/51284335)
+>* [如何在VPS上设置SSH隧道](https://www.howtoing.com/how-to-set-up-ssh-tunneling-on-a-vps)
+
 ## 任务11：服务管理 （续）
 
 * 在 c6-v1 容器上使用 `service` 和 `chkconfig` 管理服务

@@ -96,7 +96,7 @@
   * 两种方案：Socks5 代理、VPN
   * 你所知的任何免费方案
   * 购买并配置自己的 VPS，架设 Socks5 代理 和/或 VPN 服务
-    * [跟 Toy 玩自架服务器](https://linuxtoy.org/archives/selfhosted-server-4.html)）
+    * [跟 Toy 玩自架服务器](https://linuxtoy.org/archives/selfhosted-server-4.html)
     * [飞羽博客](https://cokebar.info/)
     * https://github.com/Angristan/OpenVPN-install
     * https://github.com/bedefaced/vpn-install
