@@ -10,6 +10,7 @@
 * [18 commands to monitor network bandwidth on Linux server](http://www.binarytides.com/linux-commands-monitor-network/) -- [中文版](http://os.51cto.com/art/201404/435279.htm)
 * [netdata](https://github.com/firehol/netdata)
 * [netdata：实时监视 Linux 系统性能](https://linuxtoy.org/archives/netdata.html)
+* [Monitor Linux CPU temperature, frequency, power in a graphical way](https://www.cyberciti.biz/python-tutorials/monitor-linux-cpu-temperature-frequency-power-in-a-graphical-way/)
 * [rsyslog+loganalyzer+mysql](http://www.cnblogs.com/mchina/p/linux-centos-rsyslog-loganalyzer-mysql-log-server.html)
 * [日志分析平台 ELK](https://my.oschina.net/itblog/blog/547250)
 

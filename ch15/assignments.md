@@ -32,6 +32,10 @@
   * https://owncloud.com
   * https://www.getnas.com
   
+## 反向代理与负载均衡
+
+* https://www.cyberciti.biz/open-source/http-web-performance-proxy-load-balancer-accelerator-software/
+
 ## 数据库管理
 
 * [mysql备份的三种方式详解](http://www.jb51.net/article/41570.htm)
@@ -51,4 +55,5 @@
 >* [从百草园到三味书屋](https://huanghua581.github.io/FATA/)  -- Laravel 作者著 From Apprentice To Artisan 的中文翻译
 >* [Laravel 教程 - Web 开发实战入门 ( Laravel 5.5 ) ](https://fsdhub.com/books/laravel-essential-training-5.5)
 >* [Laravel 教程 - Web 开发实战进阶 ( Laravel 5.5 ) ](https://fsdhub.com/books/laravel-intermediate-training-5.5)
+
 

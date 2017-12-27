@@ -105,6 +105,7 @@
 * [前端观察](http://www.qianduan.net)
 * [Bootstrap 4 Cheat Sheet](https://hackerthemes.com/bootstrap-cheatsheet/)
 * [Beginner Projects List on Github](https://github.com/karan/Projects-Solutions)
+* [7 Awesome Open Source Build Automation Tools For Sysadmin/DevOps/Developers](https://www.cyberciti.biz/open-source/awesome-curated-list-of-opensource-automating-software-build-tools-for-devops-sysadmin/)
 * [Over 1500 Coding Project Ideas](https://www.linuxtrainingacademy.com/projects/)
 * [Best Windows Apps](https://github.com/stackia/best-windows-apps)
 * [CodeMagic](https://shop120934020.taobao.com/)

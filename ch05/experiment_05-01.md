@@ -68,7 +68,7 @@
   * 查询本机是否安装了 epel 仓库发行包
   * 搜索 epel 仓库发行包的包名称
   * 安装 EPEL 仓库
-  * 导入 YUM 仓库的 GPG 密钥签名
+  * 导入 YUM 仓库的 GPG 密钥签名的公钥
         rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 * 配置国内镜像（方法二）
   * 用 `sed` 命令修改 epel 仓库配置文件配置使用清华大学的镜像地址
@@ -116,36 +116,77 @@ chroot /var/lib/lxc/c7-v1/rootfs passwd
 
 ## 启动指定的容器，-d 表示后台
 lxc-start -d -n c7-v1 
-lxc-ls
 ## 在制定容器中直接执行命令
-lxc-attach -n c7-v1 -- ip a
-
+lxc-attach -n c7-v1 -- passwd  # 在容器启动后设置口令
+lxc-attach -n c7-v1 -- yum install openssh-server
+lxc-ls
 ssh [<User>@]<IP>
 
-lxc-stop -n c7-v1 
+## 关闭指定容器
+lxc-stop -n c7-v1
+
+## 创建最新版的 debian 容器
+#lxc-create -n d9-v1 -t debian
+## 删除容器
+#lxc-destroy -n d9-v1
 ```
 
 2、 下载模版并创建容器
 
 ```
-## 显示可用的镜像模版
+## 0. 显示可用的镜像模版
 /usr/share/lxc/templates/lxc-download -l
 
+## 1. 从下载的镜像文件创建 CentOS6 容器
 lxc-create -n c6-v1 -t download -- -d centos -r 6 -a amd64
+
+## 后台启动容器  c6-v1
 lxc-start -d -n c6-v1 
-
-## 在容器启动后，以 lxc-attach 方式修改口令 
+## 在容器启动后，以 lxc-attach 方式修改口令
 lxc-attach -n c6-v1 -- passwd
-lxc-attach -n c6-v1 -- yum install openssh-server
-lxc-attach -n c6-v1 -- ip a
+## 如果创建容器时配置了 tty，可通过如下命令连接到 tty 
+## 还可以加 -t <n> 表示指定使用 ttyn 终端，默认为 tty1
+lxc-console -n c6-v1 
+## 登录后在容器中执行命令
+yum install openssh-server
+service sshd start
+exit
+#### 提示： <Ctrl-a> q 退出，返回到容器的宿主机
 
+lxc-ls
+ssh ...
+
+## 2. 从下载的镜像文件创建 Debian 9 容器
 lxc-create -n d9-v1 -t download -- -d debian -r stretch -a amd64
-lxc-create -n d8-v1 -t download -- -d debian -r jessie -a amd64
+#lxc-create -n d8-v1 -t download -- -d debian -r jessie -a amd64
+
+## 为 d9-v1 容器修改 PATH 环境变量
+chroot /var/lib/lxc/d9-v1/rootfs
+/bin/sed -i '$ i\export PATH=/bin:/sbin:$PATH' /root/.profile
+source /root/.profile &> /dev/null
+echo $PATH
+exit
+
+## 后台启动容器  d9-v1
+lxc-start -d -n d9-v1
+
+lxc-attach -n d9-v1 -- passwd
+lxc-attach -n d9-v1 -- apt install openssh-server vim
+lxc-attach -n d9-v1 -- vi ~/.bashrc
+lxc-attach -n d9-v1 -- systemctl is-enabled sshd
+lxc-attach -n d9-v1 -- systemctl is-active sshd
+lxc-attach -n d9-v1 -- systemctl start sshd
+lxc-ls
+ssh ...
+
+## 关闭指定容器
+lxc-stop -n d9-v1
 ```
 
 >**参考**
 >
 >* https://www.tecmint.com/install-create-run-lxc-linux-containers-on-centos/
+>* http://wiki.libvirt.org/page/VirtualNetworking
 
 ## 任务6：rpm 命令
 
@@ -183,14 +224,123 @@ lxc-create -n d8-v1 -t download -- -d debian -r jessie -a amd64
   * 与 `rpm --import` 功能对应的 `apt-key add`
 
 
-## 任务9：配置网络连接（续）
+## 任务9：配置 CentOS 6 的网络连接
 
-* 为 centos 6 容器 配置网络连接 
-  * 配置工具 `system-config-network` 
-  * 主机名设置在 `/etc/sysconfig/network` 文件中
-  * DNS 解析配置文件 `/etc/resolv.conf`
-* 为 debian 9 容器 配置网络连接
+>### 关于网络服务
+>* 静态
+>  * network - CentOS 系列
+>  * networking - Debian 系列
+>* 动态
+>  * NetworkManager 
 
->* **要求** 均配置为 静态 IP 地址 （网段与 libvirt 创建的虚拟网桥一致）
->* **参考** [Common administrative commands in Red Hat Enterprise Linux 5, 6, and 7](https://access.redhat.com/articles/1189123)
+---
+
+>**提示** 
+>* 网络服务： `network` 
+>* 网络接口配置文件 `/etc/sysconfig/network-scripts/ifcfg-eth0` 
+>* 主机名设置在 `/etc/sysconfig/network` 文件中
+>* DNS 解析配置文件 `/etc/resolv.conf`
+>* 配置的静态 IP 地址的网段应与 libvirt 创建的虚拟网桥一致
+
+1、通过 lxc-console 或 ssh 登录 c6-v1 容器
+
+    [root@c6-v1 ~]#
+
+2、修改接口位置文件  `/etc/sysconfig/network-scripts/ifcfg-eth0` 
+
+    DEVICE=eth0
+    #BOOTPROTO=dhcp
+    BOOTPROTO=none
+    ONBOOT=yes
+    HOSTNAME=c6-v1
+    NM_CONTROLLED=no
+    TYPE=Ethernet
+    MTU=
+    #DHCP_HOSTNAME=`hostname`
+    IPADDR=192.168.122.161
+    NETMASK=255.255.255.0
+    GATEWAY=192.168.122.1
+
+3、修改 DNS 解析文件 `/etc/resolv.conf`
+
+    [root@c6-v1 ~]# echo "nameserver 192.168.122.1" > /etc/resolv.conf
+
+4、确保 network 网络服务在开机时启动
+
+    [root@c6-v1 ~]# chkconfig network on
+
+5、退出容器登录
+
+    [root@c6-v1 ~]# exit
+
+   若使用 lxc-console 登入容器，则按 `<Ctrl-a> <q>` 返回宿主机的 shell
+
+6、重新启动 c6-v1 容器的网络服务
+
+    [root@host ~]# lxc-attach -n c6-v1 -- /sbin/service network restart
+
+7、重新显示容器信息
+
+    [root@host ~]# lxc-ls
+
+
+>**参考**
+>* [Common administrative commands in Red Hat Enterprise Linux 5, 6, and 7](https://access.redhat.com/articles/1189123)
+
+
+## 任务10：配置 Debian 9 的网络连接
+
+>**提示** 
+>* 网络服务：`networking`
+>* 网络接口配置文件 `/etc/network/interfaces` 
+>* 主机名设置在 `/etc/hostname` 文件中
+>* DNS 解析配置文件 `/etc/resolv.conf`
+>* 设置的静态 IP 地址的网段应与 libvirt 创建的虚拟网桥一致
+
+
+1、使用 chroot 命令切换到 d9-v1 容器的 root 文件系统
+
+    [root@host /]#
+
+2、修改接口位置文件  `/etc/network/interfaces` 
+
+```
+[root@host /]# /bin/cat > /etc/network/interfaces <<_END
+auto lo
+  iface lo inet loopback
+
+auto eth0
+#iface eth0 inet dhcp
+iface eth0 inet static
+  address 192.168.122.191
+  netmask 255.255.255.0
+  gateway 192.168.122.1
+_END
+
+```
+
+3、修改 DNS 解析文件 `/etc/resolv.conf`
+
+    [root@host /]# echo "nameserver 192.168.122.1" > /etc/resolv.conf
+
+4、确保 networking 网络服务在开机时启动
+
+    [root@host /]# /bin/systemctl enable networking
+
+5、退出容器 chroot
+
+    [root@host /]# exit
+
+6、启动容器 d9-v1
+
+    [root@host ~]# lxc-start -d -n d9-v1
+
+7、重新显示容器信息
+
+    [root@host ~]# lxc-ls
+
+
+>**参考**
+>* https://www.debian.org/doc/
+>  * https://www.debian.org/doc/manuals/debian-reference/ch05.zh-cn.html
 

@@ -16,3 +16,5 @@
 >  * [带版本控制的点对点文件同步工具](http://zhangdl.blog.51cto.com/11050780/1881853)
 >  * https://syncthing.net
 >  * https://github.com/syncthing/syncthing
+>* [7 Awesome Open Source Cloud Storage Software For Your Privacy and Security](https://www.cyberciti.biz/cloud-computing/7-awesome-open-source-cloud-storage-software-for-your-privacy-and-security/)
+>* [GnuBee: Personal blobfree NAS/Cloud server for hackers](https://www.cyberciti.biz/hardware/gnubee-personal-blobfree-nascloud-server-for-hackers/)
