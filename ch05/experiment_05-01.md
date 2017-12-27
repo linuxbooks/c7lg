@@ -119,6 +119,7 @@ lxc-start -d -n c7-v1
 ## 在制定容器中直接执行命令
 lxc-attach -n c7-v1 -- passwd  # 在容器启动后设置口令
 lxc-attach -n c7-v1 -- yum install openssh-server
+lxc-attach -n c7-v1 -- systemctl start sshd
 lxc-ls
 ssh [<User>@]<IP>
 
@@ -300,6 +301,7 @@ lxc-stop -n d9-v1
 
 1、使用 chroot 命令切换到 d9-v1 容器的 root 文件系统
 
+    [root@host ~]# chroot /var/lib/lxc/d9-v1/rootfs
     [root@host /]#
 
 2、修改接口位置文件  `/etc/network/interfaces` 
