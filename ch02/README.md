@@ -42,9 +42,9 @@
   * 文本编辑器 vim
 
 
->* [CH02 - 教学指导](ch02/guidelines.md)
->* [CH02 - 课堂笔记 2.1](ch02/lecture_notes_02-01.md)
->* [CH02 - 课堂笔记 2.2](ch02/lecture_notes_02-02.md)
->* [CH02 - 实验指导 2.1](ch02/experiment_02-01.md)
->* [CH02 - 实验指导 2.2](ch02/experiment_02-02.md)
->* [CH02 - 家庭作业](ch02/assignments.md)
+>* [CH02 - 教学指导](guidelines.md)
+>* [CH02 - 课堂笔记 2.1](lecture_notes_02-01.md)
+>* [CH02 - 课堂笔记 2.2](lecture_notes_02-02.md)
+>* [CH02 - 实验指导 2.1](experiment_02-01.md)
+>* [CH02 - 实验指导 2.2](experiment_02-02.md)
+>* [CH02 - 家庭作业](assignments.md)

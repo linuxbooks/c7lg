@@ -27,6 +27,6 @@
   * 使用安装光盘配置本地 YUM 仓库
 
 
->* [CH05 - 教学指导](ch05/guidelines.md)
->* [CH05 - 实验指导](ch05/experiment_05-01.md)
->* [CH05 - 家庭作业](ch05/assignments.md)
+>* [CH05 - 教学指导](guidelines.md)
+>* [CH05 - 实验指导](experiment_05-01.md)
+>* [CH05 - 家庭作业](assignments.md)

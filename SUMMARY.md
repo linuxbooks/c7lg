@@ -60,6 +60,7 @@
     * [CH09 - 家庭作业](ch09/assignments.md)
 * [CH10 Shell 脚本编程](ch10/README.md)
     * [CH10 - 教学指导](ch10/guidelines.md)
+    * [CH10 - 课堂笔记](ch10/lecture_notes_10-01.md)
     * [CH10 - 实验指导](ch10/experiment_10-01.md)
     * [CH10 - 家庭作业](ch10/assignments.md)
 * [阶段测验 2](quiz2.md)

@@ -24,6 +24,7 @@
 * [Linux Documentation Project](http://tldp.org/)
 * [FLOSS Manuals](http://flossmanuals.net)
 * [20本最好的LINUX免费书籍](http://coolshell.cn/articles/355.html)
+* [Linux 就该这么学（RHEL7）](http://www.linuxprobe.com/chapter-00.html)
 
 ### RHEL/Fedora/CentOS 官方文档
 
@@ -130,5 +131,6 @@
 * [Information Security and Assurance](http://www.cs.northwestern.edu/~ychen/classes/msit458-f15/), by [Yan Chen](http://www.cs.northwestern.edu/~ychen/)
 * [Introduction to Network Security](http://www.cisa.umbc.edu/courses/cmsc/487/spring07/), by Dr. Deepinder Sidhu
 * [Web Security](http://sce.uhcl.edu/yang/teaching/csci5234Spring2013/), by [T. Andrew Yang](http://sce.uhcl.edu/yang/)
+* [Linux 网络操作系统](http://www.icourses.cn/coursestatic/course_2843.html), by 杨云
 * [資訊與網路安全概論](http://www.tsnien.idv.tw/security.htm), by 粘添壽
 * [伺服器系統管理 - CentOS](http://www.tsnien.idv.tw/CentOS.htm), by 粘添壽

@@ -8,6 +8,7 @@
   * 邮件中继
   * MTA 与 DNS
   * LDA 与 用户邮箱
+  * 邮件传输过程
 * Postfix
   * Postfix 及其特性
   * Postfix 的体系结构
@@ -21,7 +22,7 @@
   * 使用 `postfix` 管理服务
   * 使用 `postconf` 工具显示配置或更新配置文件
   * Postfix 的默认配置
-  * 使用 swaks 测试 Postfix
+  * 使用 `swaks` 测试 Postfix
   * 配置基本功能的 SMTP 服务
   * 使用 access 映射表实现中继控制
   * 使用 aliases 映射表实现别名映射
@@ -44,6 +45,6 @@
   * 配置基于 SSL/TLS 的 POP3s/IMAPs 服务
 
 
->* [CH16 - 教学指导](ch16/guidelines.md)
->* [CH16 - 实验指导](ch16/experiment_16-01.md)
->* [CH16 - 家庭作业](ch16/assignments.md)
+>* [CH16 - 教学指导](guidelines.md)
+>* [CH16 - 实验指导](experiment_16-01.md)
+>* [CH16 - 家庭作业](assignments.md)

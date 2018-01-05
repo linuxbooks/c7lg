@@ -36,6 +36,7 @@
   * 函数的调用
 
 
->* [CH10 - 教学指导](ch10/guidelines.md)
->* [CH10 - 实验指导](ch10/experiment_10-01.md)
->* [CH10 - 家庭作业](ch10/assignments.md)
+>* [CH10 - 教学指导](guidelines.md)
+>* [CH10 - 课堂笔记](lecture_notes_10-01.md)
+>* [CH10 - 实验指导](experiment_10-01.md)
+>* [CH10 - 家庭作业](assignments.md)

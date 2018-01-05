@@ -112,6 +112,9 @@
 
 * 配置 sftp-grp 组的成员登录 SFTP 服务器后被监禁在 /home 目录下
 
+>**参考**
+>* [SFTP only + Chroot](https://www.server-world.info/en/note?os=CentOS_7&p=ssh&f=5) 
+
 
 ## 任务9：配置 SSH 服务
 
@@ -124,19 +127,26 @@
 
 # 任务10：配置 SSH 隧道
 
-* 配置安装并启动 webmin 
+>**基于 WUI 的系统管理工具**
+>* Webmin -- http://www.webmin.com
+>* Cockpit -- http://cockpit-project.org
+>* Ajenti -- http://ajenti.org/
+
+* 在 Linux 上安装、配置并启动 webmin 
   * 安装：参考 http://www.webmin.com/rpm.html 
   * 启动：`/etc/init.d/webmin start`
-* 在 Windows 上配置 SSH 隧道
-  * 对本机上的 9000 端口和 CentOS 7 VirtualBox 虚拟机上的 9000 建立 ssh 隧道 
-    * 若您已配置了基于 openssh-client 的密钥登录，请使用 ssh 命令
-    * 若您已配置了基于 Putty 的密钥登录，请在 Putty 的回话配置界面中设置，也可以使用 plink 命令行工具进行
-* 在 Windows 上的浏览器中使用 URL https://localhost:9000 访问 Webmin
+* 在 Windows 是上配置 SSH 隧道
+  * 对本机上的 10000 端口和 CentOS 7 VirtualBox 虚拟机上的 10000 端口建立 ssh 隧道 
+    * 安装并使用 **[MyEntunnel](https://myentunnel.informer.com/)** -- `plink` 命令行工具的 GUI 前端
+    * 若您已配置了基于 Putty 的密钥登录，可在 Putty 的回话配置界面中设置，也可以使用 `plink` 命令行工具实现
+    * 若您已配置了基于 openssh-client 的密钥登录，请使用 `ssh` 命令行工具实现
+* 在 Windows 上的浏览器中使用 URL https://localhost:10000 访问 Webmin
 
 >**参考**
 >* [三种不同类型的 SSH 隧道](http://hetaoo.iteye.com/blog/2299123) 
 >* [通过 SSH 隧道连接远程 MySQL 服务](http://blog.csdn.net/fgf00/article/details/51284335)
 >* [如何在VPS上设置SSH隧道](https://www.howtoing.com/how-to-set-up-ssh-tunneling-on-a-vps)
+
 
 ## 任务11：服务管理 （续）
 

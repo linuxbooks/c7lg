@@ -26,7 +26,7 @@
   * 作业控制及其实现
 
 
->* [CH03 - 教学指导](ch03/guidelines.md)
->* [CH03 - 实验指导 3.1](ch03/experiment_03-01.md)
->* [CH03 - 实验指导 3.2](ch03/experiment_03-02.md)
->* [CH03 - 家庭作业](ch03/assignments.md)
+>* [CH03 - 教学指导](guidelines.md)
+>* [CH03 - 实验指导 3.1](experiment_03-01.md)
+>* [CH03 - 实验指导 3.2](experiment_03-02.md)
+>* [CH03 - 家庭作业](assignments.md)

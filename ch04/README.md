@@ -22,7 +22,7 @@
   * 使用交换分区和交换文件
   * 设置磁盘限额
 
->* [CH04 - 教学指导](ch04/guidelines.md)
->* [CH04 - 课堂笔记](ch04/lecture_notes_04-01.md)
->* [CH04 - 实验指导](ch04/experiment_04-01.md)
->* [CH04 - 家庭作业](ch04/assignments.md)
+>* [CH04 - 教学指导](guidelines.md)
+>* [CH04 - 课堂笔记](lecture_notes_04-01.md)
+>* [CH04 - 实验指导](experiment_04-01.md)
+>* [CH04 - 家庭作业](assignments.md)

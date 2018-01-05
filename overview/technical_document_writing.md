@@ -134,11 +134,11 @@
 * BOOK
   * [**gitbook**](https://toolchain.gitbook.com/)
     * 解析器 -- 基于 Node.js 语言的 gitbook
-	* 支持的文档标记语言 -- Markdown（GFM）、**AsciiDoc**
+	* 支持的文档标记语言 -- Markdown（[GFM](https://help.github.com/articles/github-flavored-markdown)）、**AsciiDoc**
 	* 支持的版本控制系统 -- Git
   * [Read The Docs](http://docs.readthedocs.io/en/latest/)
     * 解析器 -- 基于 Python 语言的 [Sphinx](http://www.sphinx-doc.org)
-	* 支持的文档标记语言 -- [CommonMark](http://commonmark.org/)（Markdown）、**reStructuredText**
+	* 支持的文档标记语言 -- Markdown （[CommonMark](http://commonmark.org/)）、**reStructuredText**
 	* 支持的版本控制系统 -- Subversion, Bazaar, Git, and Mercurial 
 
 >#### Markdown to Slide

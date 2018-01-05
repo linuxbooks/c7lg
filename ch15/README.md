@@ -11,7 +11,7 @@
   * MyISAM/InnoDB/Maria 等存储引擎的特点及选择
   * 安装和启动 MySQL/MariaDB 服务
   * 单实例 MySQL/MariaDB 服务的配置
-  * 使用 mysql 的 CUI/GUI/WUI 客户工具
+  * 使用 mysql 的 CLI/GUI/WUI 客户工具
   * MySQL/MariaDB 数据库的备份与恢复
 * 键值缓存系统
   * 安装、配置和启动 Memcached
@@ -25,8 +25,8 @@
 * LAMP （Linux+Apache+MySQL+PHP）
   * 安装配置 PHP
   * 配置基于 **prefork** MPM 的 `mod_php`
-  * 配置基于 **worker/event** MPM 的 `mod_proxy_fcgi` 和 **PHP-FPM**
-  * 安装管理工具 （如：phpMyAdmin/LogAnalyzer/ISPConfig 等）
+  * 配置基于 **event** MPM 的 `mod_proxy_fcgi` 和 **PHP-FPM**
+  * 安装管理工具 （如：phpMyAdmin/LogAnalyzer 等）
   * 安装 BLOG/WIKI/FORUM/CMS/LMS 等典型应用
   * 安装配置基于 laravel/symfony 框架的应用
 * Apache 与 Tomcat
@@ -38,6 +38,7 @@
  
  
 
->* [CH15 - 教学指导](ch15/guidelines.md)
->* [CH15 - 实验指导](ch15/experiment_15-01.md)
->* [CH15 - 家庭作业](ch15/assignments.md)
+>* [CH15 - 教学指导](guidelines.md)
+>* [CH15 - 实验指导 15.1](experiment_15-01.md)
+>* [CH15 - 实验指导 15.2](experiment_15-02.md)
+>* [CH15 - 家庭作业](assignments.md)

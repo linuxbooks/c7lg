@@ -24,6 +24,6 @@
   * 在 Linux 下挂装 Windows/Samba 共享
 
 
->* [CH13 - 教学指导](ch13/guidelines.md)
->* [CH13 - 实验指导](ch13/experiment_13-01.md)
->* [CH13 - 家庭作业](ch13/assignments.md)
+>* [CH13 - 教学指导](guidelines.md)
+>* [CH13 - 实验指导](experiment_13-01.md)
+>* [CH13 - 家庭作业](assignments.md)

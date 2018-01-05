@@ -38,7 +38,7 @@
   * 编写基于 iptables 规则集文件（`iptables-save`输出格式）的防火墙脚本
 
 
->* [CH09 - 教学指导](ch09/guidelines.md)
->* [CH09 - 实验指导 9.1](ch09/experiment_09-01.md)
->* [CH09 - 实验指导 9.2](ch09/experiment_09-02.md)
->* [CH09 - 家庭作业](ch09/assignments.md)
+>* [CH09 - 教学指导](guidelines.md)
+>* [CH09 - 实验指导 9.1](experiment_09-01.md)
+>* [CH09 - 实验指导 9.2](experiment_09-02.md)
+>* [CH09 - 家庭作业](assignments.md)

@@ -20,6 +20,6 @@
   * 使用 `dig`/`nslookup`/`host` 检测域名解析
 
 
->* [CH11 - 教学指导](ch11/guidelines.md)
->* [CH11 - 实验指导](ch11/experiment_11-01.md)
->* [CH11 - 家庭作业](ch11/assignments.md)
+>* [CH11 - 教学指导](guidelines.md)
+>* [CH11 - 实验指导](experiment_11-01.md)
+>* [CH11 - 家庭作业](assignments.md)

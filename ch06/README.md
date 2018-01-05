@@ -22,6 +22,6 @@
   * 用户密钥管理
 
 
->* [CH06 - 教学指导](ch06/guidelines.md)
->* [CH06 - 实验指导](ch06/experiment_06-01.md)
->* [CH06 - 家庭作业](ch06/assignments.md)
+>* [CH06 - 教学指导](guidelines.md)
+>* [CH06 - 实验指导](experiment_06-01.md)
+>* [CH06 - 家庭作业](assignments.md)

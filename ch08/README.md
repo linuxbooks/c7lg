@@ -40,7 +40,8 @@
 * 信息安全
   * PKI 体系
   * 文件加密与解密
-  * SSL/TLS 协议
+  * 数字签名与验证
+  * SSL/TLS 协议 - 数据保密性、数据完整性、不可抵赖性
   * 创建主机私钥和自签名证书
 * 访问控制
   * 使用 `pam_access.so` 实现登录访问控制
@@ -50,6 +51,6 @@
   * 使用 TCP Wrappers 实现基于 主机/网络 的访问控制
   * 使用防火墙实现访问控制（见下一章）
 
->* [CH08 - 教学指导](ch08/guidelines.md)
->* [CH08 - 实验指导](ch08/experiment_08-01.md)
->* [CH08 - 家庭作业](ch08/assignments.md)
+>* [CH08 - 教学指导](guidelines.md)
+>* [CH08 - 实验指导](experiment_08-01.md)
+>* [CH08 - 家庭作业](assignments.md)

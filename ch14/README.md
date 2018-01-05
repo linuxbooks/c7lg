@@ -16,10 +16,12 @@
   * HTTP 的请求方法
   * HTTP 的协议头
   * HTTP 的响应代码
-* Apache
+* Apache 简介
   * Apache 的特性
   * Apache 的结构
   * Apache 的运行模式
+    * 多进程模型 **Profork MPM**
+    * 多进程多线程混合模型 **Worker MPM** 和 **Event MPM**
 * 管理 Apache
   * 安装和启动 Apache 2.4
   * 使用 `apachectl` 管理 Apache 服务
@@ -42,6 +44,6 @@
   * 安装配置 `mod-evasive` 模块防止 DoS 攻击
 
 
->* [CH14 - 教学指导](ch14/guidelines.md)
->* [CH14 - 实验指导](ch14/experiment_14-01.md)
->* [CH14 - 家庭作业](ch14/assignments.md)
+>* [CH14 - 教学指导](guidelines.md)
+>* [CH14 - 实验指导](experiment_14-01.md)
+>* [CH14 - 家庭作业](assignments.md)

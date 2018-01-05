@@ -7,6 +7,9 @@
   * https://oracle-base.com/articles/linux/linux-firewall-firewalld
 * 进一步学习 iptables 命令
   * [Iptables-tutorial](http://www.frozentux.net/documents/iptables-tutorial/)
+  * [LHW: Linux Firewalls Using iptables](www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch14_:_Linux_Firewalls_Using_iptables)
+  * [Guide to IP Layer Network Administration with Linux](http://linux-ip.net/linux-ip/)
+  * [Linux Advanced Routing and TC](http://www.lartc.org)
   * [Towards the perfect ruleset (PDF)](http://inai.de/documents/Perfect_Ruleset.pdf)
 * 学习使用第三方防火墙配置工具的使用
   * [Shorewall](http://www.shorewall.net/)

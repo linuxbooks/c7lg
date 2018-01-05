@@ -22,6 +22,6 @@
   * 在客户端挂装 NFS 文件系统
 
 
->* [CH12 - 教学指导](ch12/guidelines.md)
->* [CH12 - 实验指导](ch12/experiment_12-01.md)
->* [CH12 - 家庭作业](ch12/assignments.md)
+>* [CH12 - 教学指导](guidelines.md)
+>* [CH12 - 实验指导](experiment_12-01.md)
+>* [CH12 - 家庭作业](assignments.md)

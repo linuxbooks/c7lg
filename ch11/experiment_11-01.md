@@ -1,7 +1,64 @@
-# 实验指导 11 - 
+# 实验指导 11 - DHCP 和 DNS 服务
 
 >#### 学习目标
+>* 配置 DHCP 服务器
+>* 配置唯高速缓存 DNS 服务器和转发器
+>* 配置主 DNS 服务器
+>* 配置辅助 DNS 服务器
+>* 使用 `rndc` 命令管理 BIND
+>* 使用 `dig`/`nslookup`/`host` 命令测试 DNS
 
 
->* [使用PXE服务器和Kickstart文件自动安装多个RHEL / CentOS 7分发](https://www.howtoing.com/multiple-centos-installations-using-kickstart)
->* [通过PXE网络引导服务器安装Debian 9（Stretch）](https://www.howtoing.com/install-debian-9-stretch-via-pxe-network-boot-server)
+## 任务1：DHCP 服务器
+
+**要求**
+* DHCP 服务只监听在 Host-Only 网卡
+* 默认租约时间为18000秒；最大租约时间为36000秒
+* 局域网内所有主机的域名为 `olabs.lan`
+* 客户机使用的 DNS 服务器的 IP 地址是 DHCP 服务器的 Host-Only 网卡 IP 地址
+* 动态分配的 IP 地址范围从 192.168.56.100/24~192.168.56.199/24，默认网关地址是 DHCP 服务器的 Host-Only 网卡 IP 地址
+* 子网中有名为 cent7h2 的主机，需要固定分配 IP 地址 192.168.56.72，其他配置内容使用所在子网的配置
+* 配置防火墙允许 192.168.56.0/24 访问 DHCP 服务器
+* 配置 cent7h2 主机使用 DHCP 分配网络参数
+
+## 任务2：唯高速缓存 DNS 服务器和转发器
+
+**要求**
+* DNS 服务只监听在 Host-Only 网卡
+* 配置惟高速缓存 DNS 服务
+* 设置仅允许 192.168.56.0/24 的主机查询
+* 设置转发地址为 114.114.114.114   8.8.8.8
+* 配置防火墙允许 192.168.56.0/24 查询 DNS 服务器
+* 使用 DNS 查询工具检测配置
+* 修改使用本 DNS 服务器的客户机的 DNS 配置
+
+## 任务3：主 DNS 服务器
+
+
+**要求**
+* 配置 `olabs.lan` 的正向区域文件
+* 配置 `56.168.192.in-addr.arpa` 的反向区域文件
+* 配置正向区数据库文件和相应的 SOA/NS/MX/A/CNAME RR
+* 配置反向区数据库文件和相应的 SOA/NS/PTR RR
+
+
+## 任务4：辅助 DNS 服务器
+
+
+**要求**
+* 主 DNS 服务器
+  * 配置仅允许辅助 DNS 进行区域传输
+  * 配置防火墙仅允许辅助 DNS 服务器进行区域传输  
+* 辅助 DNS 服务器
+  * 配置 `olabs.lan` 的正向区域文件指定主 DNS 服务器
+  * 配置 `56.168.192.in-addr.arpa` 的反向区域文件指定主 DNS 服务器
+  * 配置防火墙允许 DNS 查询
+* 测试辅助 DNS 服务器查询
+
+## 任务5*：配置 Dnsmasq 服务器
+
+**要求**
+* 服务只监听在 Host-Only 网卡
+* 本地域 DNS 服务器
+* 非本地域的 DNS 转发器
+* DHCP 服务器

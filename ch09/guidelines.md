@@ -38,7 +38,6 @@
 ## 本章学习材料
 
 * **教材和课件 第9章**
-* [25个Linux服务器安全TIPs](http://os.51cto.com/art/201703/536074.htm)
 * linux.vbird.org
   * [防火牆與 NAT 伺服器](http://linux.vbird.org/linux_server/0250simple_firewall.php)
 * 马哥教育 视频

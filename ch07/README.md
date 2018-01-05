@@ -27,6 +27,6 @@
   * 修复 root 口令丢失、分区、文件系统、LVM、软件包、网络等故障
 
 
->* [CH07 - 教学指导](ch07/guidelines.md)
->* [CH07 - 实验指导](ch07/experiment_07-01.md)
->* [CH07 - 家庭作业](ch07/assignments.md)
+>* [CH07 - 教学指导](guidelines.md)
+>* [CH07 - 实验指导](experiment_07-01.md)
+>* [CH07 - 家庭作业](assignments.md)

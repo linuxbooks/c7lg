@@ -50,10 +50,10 @@
   * 关机与重启
 
   
->* [CH01 - 教学指导](ch01/guidelines.md)
->* [CH01 - 课堂笔记 1.1](ch01/lecture_notes_01-01.md)
->* [CH01 - 课堂笔记 1.2](ch01/lecture_notes_01-02.md)
->* [CH01 - 课堂笔记 1.3](ch01/lecture_notes_01-03.md)
->* [CH01 - 实验指导 1.1](ch01/experiment_01-01.md)
->* [CH01 - 实验指导 1.2](ch01/experiment_01-02.md)
->* [CH01 - 家庭作业](ch01/assignments.md)
+>* [CH01 - 教学指导](guidelines.md)
+>* [CH01 - 课堂笔记 1.1](lecture_notes_01-01.md)
+>* [CH01 - 课堂笔记 1.2](lecture_notes_01-02.md)
+>* [CH01 - 课堂笔记 1.3](lecture_notes_01-03.md)
+>* [CH01 - 实验指导 1.1](experiment_01-01.md)
+>* [CH01 - 实验指导 1.2](experiment_01-02.md)
+>* [CH01 - 家庭作业](assignments.md)

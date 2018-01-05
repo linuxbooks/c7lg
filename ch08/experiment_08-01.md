@@ -11,7 +11,6 @@
 >   * 使用 `aide` 工具实现重要文件的完整性检查
 >   * 配置 root 用户仅能使用用户密钥而非用户口令登录 SSH 服务
 >   * 将 SSH 服务运行于非标准端口 
->   * 使用安全服务替代不安全的服务
 > * 软件安全
 >   * `yum update` 与 `yum upgrade` 的区别 
 >   * `yum-cron` 获取每日安全更新通知或直接进行安全更新
@@ -43,8 +42,10 @@
 * 设置 bash 超时自动注销
 * 限制 root 用户 bash 命令历史的记录条目数量为 10
 * 配置仅 tony 用户可以使用 sudo 实现完全功能访问
-* 禁止 root 用户登录 SSH 服务（口令锁定）
-* 配置 root 仅能使用用户密钥而非用户口令登录 SSH 服务
+* 禁止 root 用户以口令方式登录（口令锁定）
+* 用户 root 的 SSH 登录策略 
+  * 禁止 root 用户登录 SSH 服务
+  * 配置 root 仅能使用用户密钥而非用户口令登录 SSH 服务
 
 ## 任务3：软件安全
 
@@ -80,7 +81,7 @@
 
 * 为 apache 用户设置打开文件数的限制为 65535
 * 配置仅 wheel 组成员可以使用 su 和 sudo 命令
-* 安装 `denyhost` 工具基于 `TCP Wrappers` 实现对 SSH 服务的主机访问控住保护
+* 安装 `denyhosts` 工具基于 `TCP Wrappers` 实现对 SSH 服务的主机访问控住保护
 
 ## 任务7：文件加密与解密
 
@@ -93,17 +94,14 @@
 
 ## 任务8：校验 RPM 包的数字签名
 
-* 使用 wget 下载最新的  usermin
-  * http://www.webmin.com/download/rpm/usermin-current.rpm
-* 检查 `usermin-current.rpm` 文件的依赖要求
-* 查询以导入 RPM 数据库的所有 GPG 公钥信息
-* 查询以导入 RPM 数据库的所有 GPG 公钥信息
+* 查询已导入 RPM 数据库的所有 GPG 公钥信息
   * 要求显示 summary，version 和 release 信息 
-* 检查 `usermin-current.rpm` 文件的 GPG 签名
-  * 下载 http://www.webmin.com/jcameron-key.asc 到 /etc/pki/rpm-gpg/ 目录
-  * 将此 GPG 签名文件导入 RPM 数据库
-  * 导入 /etc/pki/rpm-gpg/jcameron-key.asc 
-  * 重新检查 usermin-current.rpm 文件的 GPG 签名
+* 使用 wget 下载最新的  usermin RPM包，以及其 GPG 签名的公钥
+  * http://www.webmin.com/download/rpm/usermin-current.rpm
+  * http://www.webmin.com/jcameron-key.asc
+* 将此 GPG 签名的公钥文件 `jcameron-key.asc` 导入 RPM 数据库
+* 再次查询已导入 RPM 数据库的所有 GPG 公钥信息
+* 验证 usermin-current.rpm 文件的 GPG 签名
 
 
 ## 任务9：校验文件的数字签名
@@ -138,7 +136,21 @@
     * olabs.net www.olabs.net wiki.olabs.net 
     * olabs.org www.olabs.org wiki.olabs.org 
 
-## 任务11*：RKHunter ： Check Rootkit
+## 任务11*：由本地 CA 签署证书模拟证书签署过程
+
+* 在 Windows 上创建本地 CA
+  * 安装基于 OpenSSL 的前端开源 GUI 工具 [xca](https://sourceforge.net/projects/xca/) 
+  * 创建 CA 的证书和私钥
+* 在 Linux 上生成证书签名请求文件
+  * ftp.olabs.lan.csr
+  * myservers.csr 
+* 在 Windows 上使用本地 CA 签署证书
+  * 将 Linux 上生成的 CSR 文件共享给 Windows （如 scp） 
+  * 使用本地 CA 签署 CSR 文件并生成 CRT 证书文件
+  * 将生成的 CRT 证书文件共享给 Linux （如 scp） 
+
+
+## 任务12*：RKHunter ： Check Rootkit
 
 * 安装 RKHunter
 * 配置文件：`/etc/rkhunter.conf`
@@ -146,7 +158,7 @@
 
 >**参考** [RKHunter : Detect Rootkit](https://www.server-world.info/en/note?os=CentOS_7&p=rkhunter)
 
-## 任务12*： AIDE ： Host based IDS
+## 任务13*： AIDE ： Host based IDS
 
 * 安装 AIDE
 * 配置文件：`/etc/aide.conf`
@@ -156,7 +168,7 @@
 
 >**参考** [AIDE: Host based IDS](https://www.server-world.info/en/note?os=CentOS_7&p=aide)
 
-## 任务13： 漏洞检测
+## 任务14： 漏洞检测
 
 * 安装 `lynis` 
 * 首次执行 `lynis audit system`

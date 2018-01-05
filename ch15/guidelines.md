@@ -40,7 +40,7 @@
 | 408-03 | 安装和启动 MySQL/MariaDB 服务                |   掌握   |   是     |
 | 408-04 | 为 MySQL/MariaDB 的 root 用户设置口令        |   掌握   |   是     |
 | 408-05 | 单实例 MySQL/MariaDB 服务的配置              |   掌握   |   是     |
-| 408-06 | CUI 客户工具：mysql                          |   熟悉   |   是     |
+| 408-06 | CLI 客户工具：mysql                          |   熟悉   |   是     |
 | 408-07 | GUI 客户工具：HeidiSQL                       |   熟悉   |   是     |
 | 408-08 | WUI 客户工具：phpMyAdmin/Adminer             |   熟悉   |   是     |
 | 408-09 | MySQL/MariaDB 数据库的备份与恢复             |   掌握   |   是     |
@@ -48,10 +48,10 @@
 | 408-11 | 安装、启动和配置 mongoDB                     |   了解   |          |
 | 408-12 | Memcached 简介                               |   了解   |          |
 | 408-13 | 安装、启动 Memcached                         |   掌握   |   是     |
-| 408-14 | 单实例 Memcached 服务的配置                  |   掌握   |   是     |
+| 408-14 | 单实例 Memcached 服务的配置                  |   掌握   |   是*     |
 | 408-15 | 使用管理工具 `memcached-tool`                |   熟悉   |   是     |
 | 408-16 | Redis 简介                                   |   了解   |          |
-| 408-17 | 安装、启动和配置 Redis                       |   掌握   |   是     |
+| 408-17 | 安装、启动和配置 Redis                       |   掌握   |   是*     |
 | 408-18 | 单实例 Redis 服务的配置                      |   掌握   |   是     |
 | 408-19 | 使用管理工具 `redis-cli`                     |   熟悉   |   是     |
 
@@ -65,16 +65,17 @@
 | 409-03 | AWStats 日志统计分析工具的安装配置              |   掌握   |   是     |
 | 409-04 | LAMP 简介                                       |   熟悉   |          |
 | 409-05 | PHP 及其相关模块的配置                          |   掌握   |   是     |
-| 409-06 | 配置 Apache 配置基于 prefork MPM 的 mod_php    |   掌握   |   是     |
-| 409-07 | 安装配置基于 LAMP 的管理工具 phpMyAdmin/LogAnalyzer/ISPConfig |   掌握   |   是     |
-| 409-08 | 安装配置 LAMP 的 BLOG/WIKI/FORUM/CMS 等典型应用 |   熟悉   |   是     |
-| 409-09 | 安装配置基于 laravel/symfony 框架的应用         |   熟悉   |   是*    |
-| 409-10 | 配置 Apache 支持 Python 的 WSGI 模块            |   熟悉   |   是*    |
-| 409-11 | 安装配置基于 Django 框架的应用                  |   了解   |          |
-| 409-12 | 配置 Apache 支持 Ruby 的 Passenger 模块         |   了解   |   是*    |
-| 409-13 | 安装配置基于 RoR 框架的应用（如：[Gitlab](https://docs.gitlab.com/ce/README.html)）                    |   了解   |          |
-| 409-14 | 安装配置基于 Django 框架的应用（如：[Weblate](https://docs.weblate.org/en/latest/admin/install.html)） |   了解   |          |
-| 409-15 | 从源代码编译安装 LAMP 环境                      |   了解   |   是*    |
+| 409-06 | 配置 Apache 基于 mod_php 的 PHP 支持            |   掌握   |   是     |
+| 409-07 | 配置 Apache 基于 php-fpm 的 PHP 支持            |   掌握   |   是     |
+| 409-08 | 安装配置基于 LAMP 的管理工具 phpMyAdmin/LogAnalyzer |   掌握   |   是     |
+| 409-09 | 安装配置 LAMP 的 BLOG/WIKI/FORUM/CMS 等典型应用 |   熟悉   |   是     |
+| 409-10 | 安装配置基于 laravel/symfony 框架的应用         |   熟悉   |   是*    |
+| 409-11 | 配置 Apache 支持 Python 的 WSGI 模块            |   熟悉   |   是*    |
+| 409-12 | 安装配置基于 Django 框架的应用（如：[Weblate](https://docs.weblate.org/en/latest/admin/install.html)） |   了解   |     |
+| 409-13 | 配置 Apache 支持 Ruby 的 Passenger 模块         |   了解   |   是*    |
+| 409-14 | 安装配置基于 RoR 框架的应用（如：[Gitlab](https://docs.gitlab.com/ce/README.html)）  |   了解   |          |
+| 409-15 | 从 SCL 仓库安装各种版本的软件并使用 `scl` 命令切换 |   掌握   |   是     |
+| 409-16 | 从源代码编译安装 LAMP 环境                      |   了解   |   是*    |
 
 
 ### 模块410 - 代理与反向代理
