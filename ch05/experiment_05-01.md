@@ -9,7 +9,7 @@
 >   * 禁用 一致的网络设备名
 > * 网络工具
 >   * 网络测试工具 `ping`、`ss`、`ip route`、`traceroute`、`dig`
->   * 网络客户工具 `wget`、`lftp`、`elinks`、`mail`
+>   * 网络客户工具 `wget`、`lftp`、`elinks` / `w3m`、`mail`
 > * RPM 包管理
 >   * 使用 `rpm` 命令 查询软件包
 >   * 使用 `rpm` 命令 安装/卸载/升级/校验软件包

@@ -108,7 +108,7 @@ ping -c1 -W1 8.8.8.8 > /dev/null && elinks --dump http://whatismyip.org || ip r 
 
 ## 检查字符串变量空值与非空值
 
-*  检查非空
+*  检查空
        [ "$name" = "" ]
        [ -z "$name" ]
        [ ! "$name" ]

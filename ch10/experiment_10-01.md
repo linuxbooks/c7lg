@@ -20,7 +20,7 @@
 2. 安装常用的必要的软件
   * bash-completion vim-enhanced
   * net-tools psmisc yum-cron yum-utils yum-security
-  * wget curl elinks lftp mailx mutt rsync ntp git
+  * wget curl elinks w3m lftp mailx mutt rsync ntp git
   * sysstat htop dstat nload nethogs iftop
   * rkhunter aide denyhost fail2ban lynis
 3. 系统基本配置
