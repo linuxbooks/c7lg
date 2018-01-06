@@ -119,10 +119,11 @@ ping -c1 -W1 8.8.8.8 > /dev/null && elinks --dump http://whatismyip.org || ip r 
        [ "$name" ]
        [ "X${name}" != "X" ]
 
-## 检查字符串变量是否为纯数字的方法
+## 检查字符串变量是否为纯数字(正整数)的方法
 
 ```
-((n)) 2> /dev/null 
+((n>0)) 2> /dev/null 
+[ $n -gt 0 ] 2> /dev/null 
 ```
 
 ```
@@ -164,13 +165,13 @@ until: until COMMANDS; do COMMANDS; done
 
 ```
 n=
-until ((n)) 2>/dev/null
+until ((n>0)) 2>/dev/null
 do
   read -p "Pls input a number: "  n
 done
 ###
 n=
-while ! ((n)) 2>/dev/null
+while ! ((n>0)) 2>/dev/null
 do
   read -p "Pls input a number: "  n
 done
@@ -182,14 +183,14 @@ n=
 while true
 do
   read -p "Pls input a number: "  n
-  ((n)) 2>/dev/null && break
+  ((n>0)) 2>/dev/null && break
 done
 ###
 n=
 until false
 do
   read -p "Pls input a number: "  n
-  ((n)) 2>/dev/null && break
+  ((n>0)) 2>/dev/null && break
 done
 ```
 
