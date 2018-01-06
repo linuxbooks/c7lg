@@ -186,6 +186,9 @@ $ echo $?
   * 对于其他的参数应该报错，并设置退出状态码为2
   * 可以同时指定多个参数，例如 -o -p 表示既打印奇数又打印素数
 
+>**提示** 命令行参数处理：`getopts` 和 `getopt`
+>* 参考 [Shell 参数(2) - 解析命令行参数工具：getopts/getopt](https://www.cnblogs.com/yxzfscg/p/5338775.html) 
+
 ## 参考资源
 
 * [Shell 编程之语法基础](https://linuxtoy.org/archives/shell-programming-basic.html)
