@@ -11,7 +11,7 @@
 * 操作系统原理
 * 关系数据库原理
 
->**国外经典教材**
+>###国外经典教材
 >* 计算机网络
 >  * [计算机网络：自顶向下方法（原书第6版）](https://item.jd.com/11556873.html)
 >  * [计算机网络（第5版）](https://item.jd.com/10927233.html)
@@ -35,13 +35,31 @@
   * DevOps 与软件工程
   * Web/APP 应用开发
 * 硬件相关专业
-  * Linux 嵌入式开发
-  * Ardiuno 与物联网 
+  * 嵌入式开发
+    * 基于微控制器 
+      * [Arduino](https://www.arduino.cc/)
+    * 基于 ARM 平台的 Linux 操作系统
+      * [LEDE Project](https://lede-project.org/start)
+      * [Alpine Linux](https://alpinelinux.org/)
+      * Debian
+  * 物联网 
 
->**参考**
->* https://vinfrastructure.it/2013/07/iaas-vs-paas-vs-saas/
->* https://en.wikipedia.org/wiki/DevOps
->* https://en.wikipedia.org/wiki/DevOps_toolchain
+
+>###参考
+>* **Python 教材**
+>  * [Python编程快速上手 让繁琐工作自动化](https://item.jd.com/11943853.html)
+>  * [数据结构 Python语言描述](https://item.jd.com/12273412.html)
+>  * [Python算法教程](https://item.jd.com/11841674.html)
+>  * [Python极客项目编程](https://item.jd.com/12063813.html)
+>* **Arduino 与物联网**
+>  * [Arduino程序设计基础（第2版）](https://item.jd.com/11661917.html)
+>  * [图解物联网](https://item.jd.com/12177484.html)
+>  * [完美图解物联网IoT实操：使用JavaScript，Node.JS，Arduino，Raspberry Pi](https://item.jd.com/12160187.html)
+>  * [从芯片到云端：Python物联网全栈开发实践](https://item.jd.com/12253128.html)  
+>* **云平台**
+>  * https://vinfrastructure.it/2013/07/iaas-vs-paas-vs-saas/
+>  * https://en.wikipedia.org/wiki/DevOps
+>  * https://en.wikipedia.org/wiki/DevOps_toolchain
 
 ## 如何学习网络服务
 
