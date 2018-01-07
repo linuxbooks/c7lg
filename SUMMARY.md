@@ -65,6 +65,8 @@
     * [CH10 - 家庭作业](ch10/assignments.md)
 * [阶段测验 2](quiz2.md)
 
+* [写在配置网络服务之前](words_in_middle_of_course.md)
+
 ### PART III 网络服务
 * [CH11 DHCP 服务和 DNS 服务](ch11/README.md)
     * [CH11 - 教学指导](ch11/guidelines.md)
