@@ -145,7 +145,7 @@
 	  # yum -y install  nano vim-enhanced tmux screen
 	  # yum -y install  net-tools psmisc lsof sysstat
 	  # yum -y install  yum-plugin-security yum-utils createrepo
-	  # yum -y install  git wget curl elinks lynx lftp mailx mutt rsync
+	  # yum -y install  git wget curl elinks lynx lftp mailx mutt rsync bind-utils
 * 更新系统
   * 检查是否有可用的软件包更新
         # yum check-update 或 yum list updates
