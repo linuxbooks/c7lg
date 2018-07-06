@@ -16,6 +16,7 @@
   * [Fedora Workstation](https://getfedora.org/workstation/)
   * [深度操作系统桌面版](https://deepin.org/) -- 基于 Debian
   * [优麒麟操作系统](http://www.ubuntukylin.com/) -- 基于 Ubuntu
+  * [中兴新支点桌面操作系统](http://www.gd-linux.com/desktop/)  -- 基于 LinuxMint
 
 >**参考**
 >
@@ -28,10 +29,10 @@
 * CMD 替代品 -- [Cmder](http://cmder.net/)
 * 办公套件 -- [LibreOffice](http://www.libreoffice.org)
 * 浏览器 -- [FireFox](http://firefox.com.cn)
+* MarkDown 文件编辑器 -- [Typora](https://typora.io/)
 * 文本编辑和IDE -- [Atom](http://atom.io)
 * 版本控制 -- [Git](https://git-scm.com/downloads)
 * 集成 GitHub 的命令行工具 -- [gitsome](https://github.com/donnemartin/gitsome)
-
 * 电子图书管理 -- [calibre](http://calibre-ebook.com/)
 * 口令管理 -- [KeePass](http://www.keepass.info/)
 * 剪贴板管理器 -- [CopyQ](http://hluk.github.io/CopyQ)

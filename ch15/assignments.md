@@ -37,6 +37,23 @@
 
 * https://www.cyberciti.biz/open-source/http-web-performance-proxy-load-balancer-accelerator-software/
 
+## Java
+
+* [详解web容器 - Jetty与Tomcat孰强孰弱](https://www.cnblogs.com/crazyacking/p/5734849.html)
+
+* Dubbo Spring-boot
+
+* * http://dubbo.apache.org/books/
+
+  * [Dubbo入门---搭建一个最简单的Demo框架](https://blog.csdn.net/noaman_wgs/article/details/70214612/)
+
+* * [DUBBO+Zookeeper在Centos7中本地搭建及小案例](https://blog.csdn.net/changyinling520/article/details/77150857)
+
+* * [Dubbo+zookeeper 最简单的分布式搭建](https://blog.csdn.net/hua1586981/article/details/79195111)
+  * http://spring.io/projects/spring-boot
+  * https://github.com/alibaba/dubbo-spring-boot-starter
+  * https://github.com/apache/incubator-dubbo-spring-boot-project
+
 ## 数据库管理
 
 * 书籍

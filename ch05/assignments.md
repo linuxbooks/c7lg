@@ -1,6 +1,5 @@
 # CH05 - 家庭作业
 
-
 ## 熟悉 Debian 系列发行
 
 * 包管理
@@ -8,20 +7,25 @@
   * 学习修改 APT 的仓库配置文件
 * 网络配置
   * 熟悉网络接口配置文件位置及语法
- 
+
 >##### 参考
 >* https://linuxtoy.org/archives/debian-tips.html
 >* https://help.ubuntu.com/lts/serverguide/networking.html
 >* https://help.ubuntu.com/lts/serverguide/package-management.html
+
+## Docker
+
+* [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/content/)
 
 ## 文件编码转换
 
 学习使用文件编码转换命令 （`iconv`/`enconv`/`enca`/`convmv`）
 
 >##### 参考
+>
 >* [Linux 转换文件名编码和文件编码](http://niyunjiu.iteye.com/blog/739224)
 
-## 图片转换
+## 图片格式转换
 
 ```
 ## 安装 ImageMagick 和 optipng
@@ -45,7 +49,7 @@ optipng file.png
 >* http://www.imagemagick.org/
 >* [LinuxCast.net每日播客](http://study.163.com/course/courseMain.htm?courseId=221001) 之课时28
 
-## 音频转换
+## 音频格式转换
 
 2、使用命令行转换音频
 
@@ -68,7 +72,7 @@ sox 00.wav -r 8000 -c 1 00.gsm resample -ql
 >* [音频处理领域的瑞士军刀──SoX](http://blog.csdn.net/brave_heart_lxl/article/details/5715920)
 >* [sox :音频文件转换命令](http://www.2cto.com/os/201107/97208.html)
 
-## 视频转换
+## 视频格式转换
 
 ```
 ## 配置 RpmFusion 仓库

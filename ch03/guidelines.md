@@ -17,6 +17,7 @@
 | 200-06 | 配置管理工具（Ansible、Puppet、Chef、SaltStack）  |   了解   |          |
 
 * [Linux System Administrator Projects](https://www.linuxtrainingacademy.com/linux-projects/)
+* [Infra as Code 自动化运维服务](http://www.connext.com.cn/solution/infra-as-code自动化运维服务/)
 
 ### 模块201 - 账户管理
 

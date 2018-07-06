@@ -271,7 +271,7 @@ cat logfile                   # （因为数据随机产生，所以您的数据
 ………………
 
 ```
- 
+
 ## 任务4：sort 命令
 
 ```
@@ -393,10 +393,12 @@ history | sed "s/^[0-9 ]*//" | sed "s/ *| */\n/g" | awk '{print $1}' | sort | un
 
 ```
 
-> **参考**
->
->* https://www.gnu.org/software/sed/manual/sed.html
->* [SED 简明教程](http://coolshell.cn/articles/9104.html)
+>#### 参考
+> * https://www.gnu.org/software/sed/manual/sed.html
+> * [SED 简明教程](http://coolshell.cn/articles/9104.html)
+>#### 练习
+> 使用 `sed` 命令将 [DevOps实践指南.txt](assets/exercises/The-DevOps-Handbook.txt) 格式化成 [DevOps实践指南.md](assets/exercises/The-DevOps-Handbook.md) 。 
+
 
 ## 任务7：awk
 
