@@ -1,0 +1,17 @@
+{
+  "language": "zh-cn",
+  "plugins": [
+    "github",
+    "page-toc-button"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/linuxbooks/c7lg"
+    },
+    "page-toc-button": {
+      "maxTocDepth": 2,
+      "minTocSize": 2
+    }
+  }
+}
+
