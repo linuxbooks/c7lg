@@ -1,5 +1,18 @@
 # CH04 - 家庭作业
 
+## 挂装和使用 U 盘 （Windows 文件系统）
+
+* NTFS
+* * **ntfs-3g** 【EPEL仓库】
+* exFAT
+  * **exfat-utils** 和 **fuse-exfat** 【Nux Dextop 仓库】
+
+> **提示**
+>
+> * 可以在 https://centos.pkgs.org/ 以包名搜索
+
+
+
 ## 文件系统与存储
 
 * [BtrFS](http://btrfs.wiki.kernel.org/)

@@ -63,6 +63,7 @@
 * http://www.linuxplanet.com
 * http://www.techrepublic.com
 * http://www.linuxjournal.com
+* https://itsfoss.com
 * http://fossforce.com
 * http://tuxmachines.org
 * http://www.tuxs.org

@@ -75,7 +75,7 @@
 * 使用文本标记语言书写文档内容
   * 使用**纯文本编辑器** -- 如：Nodepad++， Editplus，Vim 等
   * 使用程序员偏爱的代码编辑器及其标记语言插件 -- 如：[Atom](https://atom.io/)，[Sublime Text](https//www.sublimetext.com) 等
-  * MarkDown 专用编辑器 -- 如： [MarkdownPad2](http://markdownpad.com/)
+  * MarkDown 专用编辑器 -- 如： [MarkdownPad2](http://markdownpad.com/)、[Typora](https://typora.io/)
   * AsciiDoc 专用编辑器 -- 如： [AsciiDocFX](http://www.asciidocfx.com/)
 * 使用文档格式转换工具（类此与对程序语言进行编译）
   * 生成 HTML、PDF 等格式的文件

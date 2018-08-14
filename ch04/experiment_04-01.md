@@ -38,7 +38,8 @@
   * 1G，swap  分区类型
 * 在不重启系统的前提下，让 Linux 内核重新读取新硬盘的分区表
 
->#####参考
+>##### 参考
+>
 >* https://wiki.archlinux.org/index.php/Partitioning
 >* https://wiki.archlinux.org/index.php/Fdisk
 

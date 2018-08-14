@@ -11,6 +11,8 @@
 
 ## 进一步阅读
 
+* [《深入浅出 HTTPS：从原理到实战》](https://item.jd.com/12382462.html)
+* [《Web开发的身份和数据安全》](https://item.jd.com/12298765.html)
 * [十大抢手的网站压力测试工具](http://blog.163.com/weiwenjuan_bj/blog/static/1403503362010621111052355/)
 * [Certbot：自动部署 Let's Encrypt 证书](https://linuxtoy.org/archives/certbot.html)
 * https://freessl.org/
