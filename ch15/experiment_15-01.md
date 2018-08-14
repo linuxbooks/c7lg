@@ -154,7 +154,7 @@ mv src/dokuwiki-2017-02-19e htdocs
     * 创建或编辑 `/etc/httpd/conf.d/php.conf`：
            # Allow php to handle Multiviews
            AddType text/html .php
-           
+                   
            # Add index.php to the list of files 
            # that will be served as directory indexes.
            DirectoryIndex index.php
