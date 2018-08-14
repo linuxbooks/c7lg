@@ -75,7 +75,7 @@
 
 安装配置
 * phpMyAdmin
-* dokuwiki
+* dokuwiki (`.htaccess`)
 * h5ai
 
 ### 步骤
@@ -101,7 +101,7 @@ tar xzf dokuwiki-stable.tgz
 cd ..
 rm -rf htdocs
 mv src/dokuwiki-2017-02-19e htdocs
-```  
+```
   * 在浏览器里执行安装脚本进行安装
     * http://wiki.olabs.net/install.php
     * 根据提示信息合理设置文件系统权限
@@ -258,7 +258,8 @@ mv src/dokuwiki-2017-02-19e htdocs
 >* http://phpversions.info/operating-systems/
 
 
->###练习
+>### 练习
+>
 >* 安装并启用 SCL 仓库中的 Mariadb v10.2
 >       yum search rh-mariadb102
 
@@ -297,16 +298,20 @@ mv src/dokuwiki-2017-02-19e htdocs
 ### 要求
 
 * 为 http://blog.olabs.org 安装配置一个基于 Laravel 框架的应用
- 
+
 ### 步骤
 
 1. 安装配置 composer
   * 安装 composer
+
          # curl -sS https://getcomposer.org/installer | php
+
          # mv composer.phar /usr/local/bin/composer
   * 配置 composer 全局使用的镜像站点
+
          # composer config -g repo.packagist composer \
-            https://packagist.phpcomposer.com
+
+              https://packagist.phpcomposer.com
          # tree -F -L 2 ~olabsorg
 2. 安装 laravel
        # su - olabsorg
@@ -349,6 +354,9 @@ mv src/dokuwiki-2017-02-19e htdocs
 >* https://d.laravel-china.org/docs/5.5/installation
 >* https://github.com/the-control-group/voyager
 >* https://startbootstrap.com/template-categories/blogs/
+>
+>** 练习**
+>* 安装  [Grav](https://getgrav.org/) 或 [BookStack](https://www.bookstackapp.com/)
 
 ## 任务7*：Memcached 和 Redis
 

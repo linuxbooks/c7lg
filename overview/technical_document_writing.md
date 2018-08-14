@@ -76,6 +76,7 @@
   * 使用**纯文本编辑器** -- 如：Nodepad++， Editplus，Vim 等
   * 使用程序员偏爱的代码编辑器及其标记语言插件 -- 如：[Atom](https://atom.io/)，[Sublime Text](https//www.sublimetext.com) 等
   * MarkDown 专用编辑器 -- 如： [MarkdownPad2](http://markdownpad.com/)、[Typora](https://typora.io/)
+    * [14 Best Markdown Editors for Linux](https://itsfoss.com/best-markdown-editors-linux/)
   * AsciiDoc 专用编辑器 -- 如： [AsciiDocFX](http://www.asciidocfx.com/)
 * 使用文档格式转换工具（类此与对程序语言进行编译）
   * 生成 HTML、PDF 等格式的文件
@@ -119,7 +120,6 @@
   * [The GitHub Hep](http://help.github.com/)
   * [《GitHub入门与实践》([日]大塚弘记)](https://item.jd.com/11733256.html)
   * [《完全学会Git GitHub Git Server的24堂课》(孙宏明)](https://item.jd.com/11974446.html)
-
 
 ## 将一组文档构建成网站
 

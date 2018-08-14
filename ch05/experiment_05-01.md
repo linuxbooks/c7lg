@@ -224,10 +224,17 @@ lxc-stop -n d9-v1
   * 与 yum 功能对应的 `apt`/`apt-get`  
   * 与 `rpm --import` 功能对应的 `apt-key add`
 
+> **参考**
+>
+> * [Using apt-get Commands In Linux [Complete Beginners Guide]](https://itsfoss.com/apt-get-linux-guide/)
+> * [Using apt Commands in Linux [Complete Guide]](https://itsfoss.com/apt-command-guide/)
+> * [Difference Between apt and apt-get Explained](https://itsfoss.com/apt-vs-apt-get-difference/)
+
 
 ## 任务9：配置 CentOS 6 的网络连接
 
 >### 关于网络服务
+>
 >* 静态
 >  * network - CentOS 系列
 >  * networking - Debian 系列
