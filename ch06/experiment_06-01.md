@@ -108,11 +108,16 @@
   * 使用 [WinSCP](https://winscp.net/) 实现 sftp
   * 使用 [FreeFileSync](https://www.freefilesync.org/) 实现基于 sftp 的目录同步
 
+> **参考**
+>
+> * [使用 rz 和 sz 命令在 Windows 和 Linux 之间传输小文件](https://blog.csdn.net/jack85986370/article/details/51321475)
+
 ## 任务8：配置 chroot 的 SFTP 服务
 
 * 配置 sftp-grp 组的成员登录 SFTP 服务器后被监禁在 /home 目录下
 
 >**参考**
+>
 >* [SFTP only + Chroot](https://www.server-world.info/en/note?os=CentOS_7&p=ssh&f=5) 
 
 
