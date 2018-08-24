@@ -113,11 +113,14 @@
   * [git 教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
   * [git 魔法](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/) -- [git](https://github.com/blynn/gitmagic)
   * [10篇写给Git初学者的最佳教程](http://www.cnblogs.com/JoannaQ/p/3302544.html) -- [Top 10 Git Tutorials for Beginners](https://www.webpagefx.com/blog/web-design/git-tutorials-beginners/)
+  * [Git Cheat Sheet & Git Flow](https://github.com/arslanbilal/git-cheat-sheet#readme)
   * [Git Book](https://git-scm.com/book/zh/v2)
 * 学习 Github 参考
   * [《如何高效利用GitHub》](http://www.yangzhiping.com/tech/github.html)
   * [《Got GitHub》(蒋鑫)](http://www.worldhello.net/gotgithub/)
-  * [The GitHub Hep](http://help.github.com/)
+  * [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
+  * [The GitHub Help](http://help.github.com/)
+  * * [Categories / GitHub Pages Basics](https://help.github.com/categories/github-pages-basics/)
   * [《GitHub入门与实践》([日]大塚弘记)](https://item.jd.com/11733256.html)
   * [《完全学会Git GitHub Git Server的24堂课》(孙宏明)](https://item.jd.com/11974446.html)
 

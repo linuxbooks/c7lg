@@ -2,6 +2,10 @@
 
 ## Reading Material
 
+[Awesome](https://awesome.re/) - Collaborative lists on many different topics
+
+[Awesome Lists](https://github.com/topics/awesome)
+
 ### 纸版图书
 
 * [《CentOS 7系统管理与运维实战》 王亚飞，王刚 清华大学出版社 2016.2](http://item.jd.com/11876743.html)
@@ -135,3 +139,5 @@
 * [Linux 网络操作系统](http://www.icourses.cn/coursestatic/course_2843.html), by 杨云
 * [資訊與網路安全概論](http://www.tsnien.idv.tw/security.htm), by 粘添壽
 * [伺服器系統管理 - CentOS](http://www.tsnien.idv.tw/CentOS.htm), by 粘添壽
+* **[List of awesome university courses for learning Computer Science!](https://github.com/prakhar1989/awesome-courses#readme)**
+

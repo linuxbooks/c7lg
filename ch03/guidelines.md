@@ -16,8 +16,11 @@
 | 200-05 | WUI 管理工具                      |   了解   |          |
 | 200-06 | 配置管理工具（Ansible、Puppet、Chef、SaltStack）  |   了解   |          |
 
-* [Linux System Administrator Projects](https://www.linuxtrainingacademy.com/linux-projects/)
-* [Infra as Code 自动化运维服务](http://www.connext.com.cn/solution/infra-as-code自动化运维服务/)
+> **参考**
+> * [Linux System Administrator Projects](https://www.linuxtrainingacademy.com/linux-projects/)
+> * [Awesome Sysadmin](https://github.com/n1trux/awesome-sysadmin)
+> * [Awesome Sysadmin](https://github.com/kahun/awesome-sysadmin)
+> * [Infra as Code 自动化运维服务](http://www.connext.com.cn/solution/infra-as-code自动化运维服务/)
 
 ### 模块201 - 账户管理
 

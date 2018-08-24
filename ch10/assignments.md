@@ -1,5 +1,10 @@
 # CH10 - 家庭作业
 
+## Shell 资源
+
+* [Awesome Shell](https://github.com/alebcay/awesome-shell)
+* [pure bash bible](https://github.com/dylanaraps/pure-bash-bible)
+
 ## 阅读脚本
 
 * 系统中的
@@ -21,5 +26,8 @@
 ## 学习配置管理工具
 
 * [Ansible](https://www.ansible.com/)
+  * [現代 IT 人一定要知道的 Ansible 自動化組態技巧](https://chusiang.gitbooks.io/automate-with-ansible/content/)
   * [Ansible 快速上手](https://linuxtoy.org/archives/hands-on-with-ansible.html) 
+  * [Training Course for Ansible Network Automation](https://github.com/network-automation/linklight)
   * http://www.ansible.com.cn
+

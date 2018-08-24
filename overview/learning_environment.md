@@ -9,6 +9,11 @@
   * 能连接公网
   * 使用开源虚拟化软件 **VirtualBox** 安装 Linux 系统虚拟机
 
+> **参考**
+>
+> *  Mac 用户：[Awesome Mac](https://github.com/jaywcjlove/awesome-mac)
+> *  Win 用户：[Awesome Windows](https://github.com/Awesome-Windows/Awesome)
+
 ## Windows 下的软件获取
 
 * 国内

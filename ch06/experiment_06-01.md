@@ -120,7 +120,6 @@
 >
 >* [SFTP only + Chroot](https://www.server-world.info/en/note?os=CentOS_7&p=ssh&f=5) 
 
-
 ## 任务9：配置 SSH 服务
 
 * 设置所有用户必须以密钥方式登录
@@ -130,7 +129,7 @@
 * 除了 root 只有 student 和 tony 才能使用 ssh/scp/sftp
 * 重新启动 sshd 服务
 
-# 任务10：配置 SSH 隧道
+## 任务10：配置 SSH 隧道
 
 >**基于 WUI 的系统管理工具**
 >* Webmin -- http://www.webmin.com

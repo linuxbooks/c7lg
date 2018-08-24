@@ -16,7 +16,7 @@
   * [homeLANsecurity](http://homelansecurity.sf.net/)
   * [Firewall Builder](http://www.fwbuilder.org/)
 * 了解和使用专用的防火墙发行版本
- * [List of router and firewall distributions](https://en.wikipedia.org/wiki/List_of_router_and_firewall_distributions)
+ * * [List of router and firewall distributions](https://en.wikipedia.org/wiki/List_of_router_and_firewall_distributions)
 * 学习 Squid 代理服务（应用层防火墙）的安装和配置
 * 学习本书未涉及 SELinux 方面的内容
   * [NSA SELinux 网站主页](http://www.nsa.gov/selinux/)

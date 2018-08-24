@@ -12,17 +12,24 @@
   * 以 root 用户登录
   * 用 Alt+F2 切换第二个虚拟控制台，以 student 用户登录 
 * 从宿主机远程登录 Linux
-  *. 使用 Git Bash
-       $ ssh root@192.168.56.71
-       # logout                          # 或 exit 或 Ctrl+d
-       
-	   $ ssh student@192.168.56.71
-	   $ logout                          # 或 exit 或 Ctrl+d
-  *. 使用 Putty
+  * 使用 Git Bash
+         $ ssh root@192.168.56.71
+         
+
+         # logout                          # 或 exit 或 Ctrl+d
+         
+         $ ssh student@192.168.56.71
+         
+         $ logout                          # 或 exit 或 Ctrl+d
+  * 使用 Putty
     * 从 <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html> 下载 Putty 并安装
     * 创建两个会话，分别用于 root 和 student 登录 192.168.56.71
 
-> **参考**：<http://www.runoob.com/linux/linux-remote-login.html>
+> **参考**
+>
+> * <http://www.runoob.com/linux/linux-remote-login.html>
+> * [《完全用 GNU/Linux 工作》 之 20. 增進 SSH 使用效率 - ssh_config](https://chusiang.gitbooks.io/working-on-gnu-linux/content/20.ssh_config.html)
+> * [storm](https://github.com/emre/storm) is a command line tool to manage your ssh connections.
 
 ## 任务2：获得命令帮助
 
@@ -41,10 +48,10 @@
       $ which ll                             # ll 是命令别名
       $ ls -F /etc 
       $ ls -a
-	  
+	
 	  $ which clear
 	  $ clear                                # 清屏，快捷键为 <Ctrl+l>
-	  
+	
 	  $ basename --help
 	  $ basename /usr/bin/sort
       $ dirname --help
@@ -90,11 +97,11 @@
 	  $ whatis passwd   
 	  $ man passwd
 	  $ man 5 passwd
-	  
+	
       # 从 man 的索引数据库中查找有关 standards 的手册（模糊匹配）
 	  $ apropos standards   
 	  $ man 7 standards
-	  
+	
 	  # 比较 whatis 和 apropos
 	  $ whatis ls
 	  $ apropos ls  或 man -k ls
@@ -104,7 +111,7 @@
       $ man 4 pts
 
 >**man手册的操作**（与 `less` 命令的操作键兼容）
-> 
+>
 >* 下箭头：向下滚动一行；上箭头：向上滚动一行
 >* 空格键 或 PgDn：向下滚动一屏；PgUp：向上滚动一屏
 >* /string ： 向下搜索字符串 string
@@ -118,20 +125,20 @@
 	  [student@localhost ~]$ su -
 	  Password:           # 输入 root 用户口令
 	  [root@localhost ~]# 
-	  
+	
 	  ## 执行只有 root 用户才能执行的管理命令
       # 安装最小化安装未安装的 man-pages
 	  [root@localhost ~]# yum -y install man-pages       
 	  [root@localhost ~]# mandb --help
       # 创建 man 索引数据库文件
 	  [root@localhost ~]# mandb -c
-	  
+	
 	  [root@localhost ~]# exit
 	  [student@localhost ~]$ 
 * root 用户切换为普通用户
 	  [root@localhost ~]# su - student
 	  [student@localhost ~]$
-	  
+	
 	  [student@localhost ~]$ exit
 	  [root@localhost ~]# 
 
@@ -200,7 +207,7 @@
 * 设置语言支持
       # 查看系统支持的语言
 	  # localectl list-locales
-       
+  
       # 更改为英文，下次登录时生效
       # localectl set-locale LANG="en_US.UTF-8"
 	  # 更改为中文，下次登录时生效
@@ -208,7 +215,7 @@
 * 设置系统时区
       # 查看系统支持的时区
 	  # timedatectl list-timezones
-	  
+	
 	  # 更改时区为欧洲巴黎，立即生效
 	  # timedatectl set-timezone Europe/Paris
 	  # 更改时区为中国上海，立即生效

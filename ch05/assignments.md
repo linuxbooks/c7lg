@@ -13,11 +13,16 @@
 >* https://help.ubuntu.com/lts/serverguide/networking.html
 >* https://help.ubuntu.com/lts/serverguide/package-management.html
 
-## Docker
+## 了解 Container & Docker
+
+* [Awesome Linux Containers](https://github.com/Friz-zy/awesome-linux-containers)
+* [Awesome Docker](https://github.com/veggiemonk/awesome-docker)
 
 * [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/content/)
 
-## 文件编码转换
+## 文件转换
+
+### 文件编码转换
 
 学习使用文件编码转换命令 （`iconv`/`enconv`/`enca`/`convmv`）
 
@@ -25,7 +30,9 @@
 >
 >* [Linux 转换文件名编码和文件编码](http://niyunjiu.iteye.com/blog/739224)
 
-## 图片格式转换
+### 图片格式转换
+
+使用命令行转换图片格式
 
 ```
 ## 安装 ImageMagick 和 optipng
@@ -49,9 +56,9 @@ optipng file.png
 >* http://www.imagemagick.org/
 >* [LinuxCast.net每日播客](http://study.163.com/course/courseMain.htm?courseId=221001) 之课时28
 
-## 音频格式转换
+### 音频格式转换
 
-2、使用命令行转换音频
+使用命令行转换音频
 
 ```
 ## 安装 sox
@@ -72,7 +79,9 @@ sox 00.wav -r 8000 -c 1 00.gsm resample -ql
 >* [音频处理领域的瑞士军刀──SoX](http://blog.csdn.net/brave_heart_lxl/article/details/5715920)
 >* [sox :音频文件转换命令](http://www.2cto.com/os/201107/97208.html)
 
-## 视频格式转换
+### 视频格式转换
+
+使用命令行转换视频
 
 ```
 ## 配置 RpmFusion 仓库
